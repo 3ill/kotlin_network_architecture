@@ -1,6 +1,13 @@
+import org.gradle.api.tasks.JavaExec
+
 plugins {
     kotlin("jvm") version "2.4.20"
     kotlin("plugin.serialization") version "2.4.20"
+    id("application")
+}
+
+tasks.named<JavaExec>("run") {
+    mainClass.set("org.example.MainKt")
 }
 
 group = "org.example"
