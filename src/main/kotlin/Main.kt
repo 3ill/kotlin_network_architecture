@@ -7,9 +7,18 @@ suspend fun main() {
     val client = HttpClientFactory.create()
     println("HTTP client created successfully")
 
-    val userApi = UserApi(client)
-    val response = userApi.getUsers()
+    try {
+        val userApi = UserApi(client)
+        val users = userApi.getUsers()
 
-    println(response)
-    client.close()
+        users.forEach {
+            println("${it.id}: ${it.name} <${it.email}>")
+        }
+
+
+    } finally {
+        client.close()
+    }
+
+
 }
