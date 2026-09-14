@@ -4,7 +4,7 @@ import org.example.api.UserApi
 import org.example.core.network.ApiError
 import org.example.core.network.ApiResult
 import org.example.core.network.HttpClientFactory
-import org.example.services.user.UserRepositoryImpl
+import org.example.repositories.user.UserRepositoryImpl
 
 
 suspend fun main() {
