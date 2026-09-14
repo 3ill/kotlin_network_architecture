@@ -1,4 +1,4 @@
-package org.example.services.user
+package org.example.repositories.user
 
 import org.example.core.network.ApiResult
 import org.example.data.models.User
