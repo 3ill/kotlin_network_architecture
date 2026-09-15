@@ -2,6 +2,7 @@ package org.example.api
 
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
+import org.example.core.config.UserEndpointsConfig
 import org.example.core.network.ApiResult
 
 import org.example.core.network.safeApiCall
