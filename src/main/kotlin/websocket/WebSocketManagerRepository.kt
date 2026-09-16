@@ -1,7 +1,7 @@
 package org.example.websocket
 
 
-interface WebSocketManager {
+interface WebSocketManagerRepository {
     suspend fun connect()
 
     suspend fun connectOnce()
